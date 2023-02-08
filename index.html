@@ -1,110 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HuuThoCS</title>
+  <meta charset="UTF-8">
+  <title>HuuThoCS</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
-<style>
-    .uk-timeline .uk-timeline-item .uk-card {
-        max-height: 300px;
-    }
-    
-    .uk-timeline .uk-timeline-item {
-        display: flex;
-        position: relative;
-    }
-    
-    .uk-timeline .uk-timeline-item::before {
-        background: #dadee4;
-        content: "";
-        height: 100%;
-        left: 19px;
-        position: absolute;
-        top: 20px;
-        width: 2px;
-            z-index: -1;
-    }
-    
-    .uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
-            margin-top: 20px;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .uk-timeline .uk-timeline-item .uk-timeline-content {
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-        padding: 0 0 0 1rem;
-    }
-</style>
 <body>
-    <div class="uk-container uk-padding">
-        <div class="uk-timeline">
-            <div class="uk-timeline-item">
-                <div class="uk-timeline-icon">
-                    <span class="uk-badge"><span uk-icon="check"></span></span>
-                </div>
-                <div class="uk-timeline-content">
-                    <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <h3 class="uk-card-title"><time datetime="2020-07-08">July 8</time></h3>
-                                <span class="uk-label uk-label-success uk-margin-auto-left">Feature</span>
-                            </div>
-                        </div>
-                        <div class="uk-card-body">
-                                                <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<!-- partial:index.partial.html -->
+<div class="uk-container uk-padding">
+    <div class="uk-timeline">
+        <div class="uk-timeline-item">
+            <div class="uk-timeline-icon">
+                <span class="uk-badge"><span uk-icon="check"></span></span>
             </div>
-            <div class="uk-timeline-item">
-                <div class="uk-timeline-icon">
-                    <span class="uk-badge"><span uk-icon="check"></span></span>
-                </div>
-                <div class="uk-timeline-content">
-                    <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <h3 class="uk-card-title"><time datetime="2020-07-07">July 7</time></h3>
-                                <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span>
-                            </div>
-                        </div>
-                        <div class="uk-card-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            </p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            </p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            </p>
+            <div class="uk-timeline-content">
+                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title"><time datetime="2020-07-08">July 8</time></h3>
+                            <span class="uk-label uk-label-success uk-margin-auto-left">Feature</span>
                         </div>
                     </div>
-                </div>
-            </div>
-                    <div class="uk-timeline-item">
-                <div class="uk-timeline-icon">
-                    <span class="uk-badge"><span uk-icon="check"></span></span>
-                </div>
-                <div class="uk-timeline-content">
-                    <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <h3 class="uk-card-title"><time datetime="2020-07-06">July 6</time></h3>
-                                <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span>
-                            </div>
-                        </div>
-                        <div class="uk-card-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                            </p>
-                        </div>
+                    <div class="uk-card-body">
+											<p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
+                        </p>
                     </div>
-                                    <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a>
                 </div>
             </div>
         </div>
+        <div class="uk-timeline-item">
+            <div class="uk-timeline-icon">
+                <span class="uk-badge"><span uk-icon="check"></span></span>
+            </div>
+            <div class="uk-timeline-content">
+                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title"><time datetime="2020-07-07">July 7</time></h3>
+                            <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+				<div class="uk-timeline-item">
+            <div class="uk-timeline-icon">
+                <span class="uk-badge"><span uk-icon="check"></span></span>
+            </div>
+            <div class="uk-timeline-content">
+                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
+                    <div class="uk-card-header">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <h3 class="uk-card-title"><time datetime="2020-07-06">July 6</time></h3>
+                            <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span>
+                        </div>
+                    </div>
+                    <div class="uk-card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+                    </div>
+                </div>
+								<a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a>
+            </div>
+        </div>
     </div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js'></script>
 </body>
 </html>
