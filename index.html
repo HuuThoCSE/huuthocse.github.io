@@ -1,323 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>HuuThoCSE</title>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css'><link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu Chuyện Tình Yêu Xa Cách</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    body {
+    background-color: #f7f0f5;
+    font-family: 'Arial', sans-serif; /* Font chữ dễ đọc cho nội dung */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Ngăn chặn cuộn cho toàn bộ trang */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ngăn chặn cuộn cho container */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    height: 90vh; /* Đặt chiều cao cố định cho card */
+    overflow-y: auto; /* Thêm thanh cuộn dọc khi cần thiết */
+    text-align: justify; /* Căn đều hai bên để dễ đọc hơn */
+}
+
+.title {
+    font-family: 'Dancing Script', cursive; /* Font chữ viết tay cho tiêu đề */
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ff6f91;
+}
+
+.story p {
+    font-size: 18px; /* Giảm kích thước chữ một chút để dễ đọc hơn */
+    line-height: 1.8; /* Tăng chiều cao dòng để đọc dễ hơn */
+    color: #333;
+    margin-bottom: 20px; /* Tạo khoảng cách giữa các đoạn văn */
+    text-align: justify; /* Căn đều hai bên để nội dung gọn gàng hơn */
+    text-indent: 2em; /* Thụt đầu dòng mỗi đoạn */
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive; /* Font chữ viết tay cho chữ ký */
+    font-size: 20px;
+    color: #ff6f91;
+    margin-top: 30px; /* Thêm khoảng cách trên để tách biệt chữ ký */
+}
+
+</style>
 <body>
-<!-- partial:index.partial.html -->
-<div class="uk-container uk-padding">
-    <div class="uk-timeline">
-
-        <!-- <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-08">July 8</time></h3>
-                            <span class="uk-label uk-label-success uk-margin-auto-left">Feature</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-											<p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="card">
+            <h1 class="title">Câu Chuyện Tình Yêu Xa Cách</h1>
+            <p class="story">
+                <p>Tôi là Thọ, một chàng trai miền Nam Việt Nam, sinh ra và lớn lên ở Vĩnh Long. Tôi học ngành Khoa học máy tính, chuyên ngành Trí tuệ nhân tạo. Cuộc sống của tôi tưởng như bình yên cho đến khi tôi gặp Ngát, một cô gái từ miền Bắc, Hà Nội. Chúng tôi quen biết nhau lần đầu qua một nhóm học tập nhỏ trên Facebook, khi đại dịch COVID-19 bùng phát. Trong những ngày tháng đó, các buổi học online là cầu nối giúp chúng tôi đến gần nhau hơn.</p>
+                <p>Ban đầu, chúng tôi chỉ là những người bạn cùng học toán, lý. Tôi thường xuyên "ké" vào những buổi học hóa học của Ngát, chỉ để có cơ hội trò chuyện với cô ấy nhiều hơn. Qua những lần trao đổi bài vở, chia sẻ kiến thức, chúng tôi dần dần trở thành bạn thân. Ngát, với nụ cười hiền lành và tính cách dịu dàng, đã làm trái tim tôi rung động từ lúc nào không hay. Tình cảm của tôi dành cho Ngát cứ lớn dần qua từng tin nhắn, từng cuộc gọi.</p>
+                <p>Thời gian trôi qua, chúng tôi vẫn duy trì liên lạc, và mối quan hệ càng trở nên sâu sắc hơn. Mỗi khi Ngát gặp khó khăn với công việc trên máy tính, tôi luôn sẵn sàng remote từ xa để giúp đỡ. Có những ngày chỉ cần nghe giọng em qua điện thoại, tôi đã cảm thấy cuộc sống này tràn đầy màu sắc. Và rồi, tình cảm ấy đã thôi thúc tôi quyết định gặp Ngát ngoài đời thực.</p>
+                <p>Đến năm cuối đại học, khi mong muốn gặp Ngát ngoài đời càng mãnh liệt, tôi quyết định thực hiện chuyến đi ra Hà Nội. Tôi đã bàn bạc với hai người bạn thân của mình, Hoàng và Bảo, về ý định này. Cả hai đều nhiệt tình ủng hộ và quyết định sẽ cùng tôi thực hiện chuyến đi. Chúng tôi lên kế hoạch đi vào một buổi sáng thứ Bảy.</p>
+                <p>Chuyến đi đến Hà Nội hôm đó đầy hào hứng và cũng lắm bất ngờ. Chúng tôi bước lên chuyến máy bay với sự háo hức khó tả. Sau khi hạ cánh, chúng tôi dự tính sẽ gặp Ngát và quay về ngay trong ngày. Tuy nhiên, mọi thứ không diễn ra theo kế hoạch.</p>
+                <p>Chiều hôm đó, khi đang đi dạo quanh Hà Nội, tôi nhận ra trong túi mình chỉ còn đủ tiền cho chuyến đi, mà chưa tính đến chuyến về. Hoàng thì đã mua vé chuyến về lúc 17h, còn Bảo, do không đủ tiền, đã bị kẹt lại cùng tôi khi hiện tại đã là 20h. Chúng tôi đứng giữa phố phường Hà Nội, cảm giác bối rối không biết phải làm gì tiếp theo.</p>
+                <p>Trong lúc đang phân vân, điện thoại của tôi đột nhiên reo lên - là Ngát gọi. Nghe giọng em, tôi như trút được gánh nặng trong lòng. Tôi liền chạy ra tìm em, để kể hết mọi chuyện. Ngay khi gặp được em, tất cả cảnh vật Hà Nội như trở nên mờ nhạt. Trước mắt tôi chỉ còn lại hình ảnh của em, một cô gái mặc chiếc đầm hồng nhạt, với nụ cười tươi rói và ánh mắt dịu dàng. Hà Nội ngày hôm đó đẹp hơn bao giờ hết.</p>
+                <p>Chúng tôi quyết định đi dạo quanh phố, ngắm nhìn thành phố về đêm. Khi đi ngang qua một tiệm hoa nhỏ, tôi thấy có vài bó hoa hồng. Chẳng biết hôm nay có sự kiện gì, nhưng tôi bất chợt mua một bông hoa tặng em. Em cười, nụ cười ấy làm lòng tôi ấm áp lạ thường.</p>
+                <p>Chiều xuống, em có vẻ mệt mỏi, ngáp dài buồn ngủ. Tôi nhẹ nhàng để em tựa vào vai mình, nhưng nhận ra tư thế ngồi đó có vẻ không thoải mái lắm. Tôi quyết định bế em lên và cõng em trên vai, đi dọc con đường mòn nhỏ. Ngát thì thầm cho tôi một định vị 23.5’ 5”. Dựa vào kinh nghiệm, tôi cố gắng định hướng và dẫn em đi. Chúng tôi đến một khu vực nhỏ, hình vuông, bên cạnh là con sông nhỏ chảy lặng lẽ. Bất chợt, em cất tiếng gọi, và một đàn chó con từ dưới lớp cát chạy lên, vui đùa quanh hai chúng tôi. Những chú chó con dễ thương ấy khiến em cười vui vẻ.</p>
+                <p>Nhưng rồi, em phủi lớp cát bên cạnh và phát hiện hai chú chó bị vùi dưới đó. Tôi cảm thấy bất ngờ trước sự nhạy cảm và lòng nhân ái của em. Chúng tôi tiếp tục đi gặp chị hai của em, người mà tôi chưa từng gặp nhưng đã nghe em kể rất nhiều. Một chú khỉ con tinh nghịch nhảy nhót quanh nhà, khiến không khí trở nên vui vẻ hơn.</p>
+                <p>Hoàng và Bảo thì đi loanh quanh Hà Nội, tìm cách giải quyết vấn đề vé về. Nhưng rồi, họ cũng gặp khó khăn không kém. Hoàng bị mất ví, còn Bảo thì quên điện thoại ở quán cà phê nào đó. Cuối cùng, cả ba chúng tôi quyết định tạm thời vào tiệm net chơi để tìm cách giải quyết.</p>
+                <p>Khi định rời đi, tôi phát hiện mình bị quên mất một chiếc dép, lại phải quay lại tìm. Sau đó, tôi cõng em tiếp, cảm nhận được sự ấm áp từ người em. Tôi ngập ngừng hỏi: "Giờ mình đi đâu? Hay về nhà mẹ em nhé, anh muốn thắp một nén nhang cho cha em." Em gật đầu, mắt sáng lên niềm vui thầm kín. Chúng tôi đến nhà ga mua vé, nhưng không may Ngát bị bệnh. Tôi không hề do dự, chấp nhận cùng em đi đến bất cứ đâu, dù chẳng biết tương lai sẽ ra sao. Cuối cùng, chúng tôi không thể mua vé thành công, đành phải nhờ người quen giúp đỡ.</p>
+                <p>Rồi bỗng, tôi tỉnh dậy. Tôi nhận ra mình vẫn đang ở trong phòng, nằm trên chiếc giường quen thuộc. Tất cả chỉ là một giấc mơ. Một giấc mơ đẹp nhưng lại khiến lòng tôi nặng trĩu. Ngày hôm sau là sinh nhật của Ngát, tròn 21 tuổi. Tôi đã chuẩn bị sẵn một lời chúc sinh nhật từ lâu: "Chúc em sinh nhật vui vẻ, Ngát của anh. Dù chúng ta không ở gần nhau, nhưng anh luôn mong em hạnh phúc, khỏe mạnh. Em luôn là động lực để anh cố gắng mỗi ngày. Mong rằng em luôn được bình an và có một cuộc sống tràn đầy niềm vui."</p>
+                <p>Nhưng rồi, tôi chợt nhận ra mình chưa thể nói hết những điều trong lòng, chưa thể thực hiện được giấc mơ gặp em ngoài đời thực. Nhưng dù chỉ là một giấc mơ, tôi vẫn cảm thấy hạnh phúc vì ít nhất trong giấc mơ đó, tôi đã có thể cùng em trải qua những khoảnh khắc tuyệt vời. Tình cảm của tôi dành cho em vẫn mãi đong đầy, chờ một ngày có thể biến giấc mơ thành hiện thực.</p>
+                <p>Cuộc sống vẫn tiếp tục, nhưng hình ảnh em vẫn luôn hiện hữu trong tâm trí tôi. Có lẽ, yêu một người mà bạn không thể gặp mỗi ngày là minh chứng cho một tình yêu không nằm ở trước mắt, mà là ở trong tim. Và tôi, tôi vẫn chờ đợi một ngày được gặp lại em, không phải trong giấc mơ, mà là giữa đời thực.</p>
+            </p>
+            <p class="signature">Yêu em, <br/>Nguyễn Hữu Thọ</p>
         </div>
-
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge"><span uk-icon="check"></span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-07-07">July 7</time></h3>
-                            <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-	<div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title">Ngày 25 tháng 08 năm 2023 - Ngày 17 tháng 12 năm 2023</h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Đi học tập Hàn Quốc tại University Korea of Technology and Education (KoreaTech)</p>
-                    </div>
-                </div>
-            </div>
-	</div>
-	    
-	<div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2023-05-30"> Ngày 28 tháng 06 năm 2023</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Giấy khen ĐẠT GIẢI KHUYẾN KHÍCH Cuộc thi vô địch tin học văn phòng thế giới MOS - Viettel 2023</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-	<div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2023-05-30"> Ngày 30 tháng 05 năm 2023</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>ĐẠT GIẢI KHUYẾN KHÍCH KHU VỰC - Khu vực đồng bằng sông Cửu Long - Cuộc thi vô địch tin học văn phòng thế giới MOS 2023</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-	<div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2023-05-19"> Ngày 19 tháng 05 năm 2023</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>ĐẠT DANH HIỆU THANH NIÊN TIÊN TIẾN LÀM THEO LỜI BÁC - NĂM HỌC 2022 - 2023</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-	<div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2023-04-28"> Ngày 28 tháng 04 năm 2023</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Có thành tích học tập đạt loại Giỏi, rèn luyệt Xuất sắc học kỳ I năm học 2022 - 2022</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-	    
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2022-10-25"> Ngày 25 tháng 10 năm 2022</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Có thành tích học tập đạt loại Giỏi, rèn luyệt Xuất sắc trong HK II</p>
-                        <p>Có thành tích học tập đạt loại Giỏi, rèn luyệt Xuất sắc trong năm học 2021 - 2022</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2022-08-10">Ngày 10 tháng 08 năm 2022</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Đạt - Chứng chỉ ỨNG DỤNG CÔNG NGHỆ THÔNG TIN CƠ BẢN</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2022-05-15">Ngày 15 tháng 05 năm 2022</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Đạt - Chứng nhận Microsoft Office Word 2016, Ngôn ngữ: English 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2021-05-06"> Ngày 06 tháng 05 năm 2022</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Sinh viên có thành tích học tập và rèn luyện Xuất Sắc HKI (2021-2022)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2021-08-10">Ngày 10 tháng 08 năm 2021</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Tân sinh viên <a href="http://vlute.edu.vn/vi/">trường Đại học Sư phạm Kỹ thuật Vĩnh Long</a>, ngành: Khoa học máy tính</p>
-                    </div>
-                </div>
-								<!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
-            </div>
-        </div>
-
-	    <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2020-01-10">Ngày 10 tháng 01 năm 2020</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Giải nhất - Tập thể - Cuộc thi Khoa học kỹ thuật dành cho học sinh THPT Cấp trường - Năm học 2019 - 2020</p>
-                        <p>Để tài: <a href="https://github.com/huuthocs/ISOS-Information-system-on-school">Hệ thống trường học (ISOS - Information system on school)</a></p>
-                    </div>
-                </div>
-								<!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
-            </div>
-        </div>
-
-        <div class="uk-timeline-item">
-            <div class="uk-timeline-icon">
-                <span class="uk-badge">
-                    <!-- <span uk-icon="check"> -->
-                </span></span>
-            </div>
-            <div class="uk-timeline-content">
-                <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <h3 class="uk-card-title"><time datetime="2019-01-10">Ngày 10 tháng 01 năm 2019</time></h3>
-                            <!-- <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span> -->
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>Giải nhì - Cá nhân - Cuộc thi Khoa học kỹ thuật dành cho học sinh THPT Cấp trường - Năm học 2018 - 2019</p>
-                        <p>Để tài: <a href="https://github.com/juto2k3/isis">Hệ thống thông tin trường học (ISIS - Information system on school)</a></p>
-                    </div>
-                </div>
-								<!-- <a href="#"><span class="uk-margin-small-right" uk-icon="triangle-down"></span>Load more</a> -->
-            </div>
-        </div>
-
     </div>
-</div>
-<!-- partial -->
-<script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js'></script>
-<script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js'></script>
 </body>
 </html>
