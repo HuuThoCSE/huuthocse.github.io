@@ -1,20 +1,121 @@
-<h1>LÝ LỊCH KHOA HỌC</h1>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lý lịch khoa học - Nguyễn Hữu Thọ</title>
+    <!-- Tailwind CDN (demo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 antialiased">
+    <div class="min-h-screen flex items-center justify-center py-10">
+        <div class="max-w-3xl w-full bg-white shadow-lg rounded-xl px-8 py-10">
+            <!-- Tiêu đề chính -->
+            <header class="border-b pb-4 mb-6">
+                <h1 class="text-2xl font-bold text-center tracking-wide uppercase">
+                    Lý lịch khoa học
+                </h1>
+                <p class="text-center text-sm text-gray-500 mt-2">
+                    (Dùng cho hồ sơ ứng tuyển, xét tuyển, hoạt động nghiên cứu khoa học)
+                </p>
+            </header>
 
-<h2>I. THÔNG TIN CÁ NHÂN</h2>
+            <!-- I. Thông tin cá nhân -->
+            <section class="mb-8">
+                <h2 class="text-lg font-semibold mb-3 flex items-center gap-2">
+                    <span class="w-1 h-5 bg-blue-600 rounded"></span>
+                    <span>I. Thông tin cá nhân</span>
+                </h2>
 
-<p>
-    <span>Họ và tên: Nguyễn Hữu Thọ. Giới tính: Nam</span>
-    <span>Email: huutho.cse@gmail.com</span>
-    <span>Trình độ chuyên môn: Kỹ sư ngành Khoa học máy tính</span>
-</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm md:text-base">
+                    <div>
+                        <span class="font-semibold">Họ và tên:</span>
+                        <span> Nguyễn Hữu Thọ</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold">Giới tính:</span>
+                        <span> Nam</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold">Email:</span>
+                        <a href="mailto:huutho.cse@gmail.com" class="text-blue-600 hover:underline">
+                            huutho.cse@gmail.com
+                        </a>
+                    </div>
+                    <div>
+                        <span class="font-semibold">Trình độ chuyên môn:</span>
+                        <span> Kỹ sư ngành Khoa học máy tính</span>
+                    </div>
+                </div>
+            </section>
 
-<h2>II. QUÁ TRÌNH NGHIÊN CỨU KHOA HỌC</h2>
+            <!-- II. Quá trình nghiên cứu khoa học -->
+            <section class="mb-8">
+                <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                    <span class="w-1 h-5 bg-blue-600 rounded"></span>
+                    <span>II. Quá trình nghiên cứu khoa học</span>
+                </h2>
 
-<h3>1. Các đề tài nghiên cứu khoa học đã thực hiện.</h3>
+                <ol class="space-y-4 list-decimal list-inside text-sm md:text-base">
+                    <!-- 1. Các đề tài NCKH -->
+                    <li>
+                        <h3 class="font-semibold">
+                            1. Các đề tài nghiên cứu khoa học đã thực hiện
+                        </h3>
+                        <p class="text-gray-600 text-sm italic">
+                            (Liệt kê theo thứ tự thời gian, từ mới đến cũ; ghi rõ vai trò: chủ nhiệm, thư ký, thành viên…)
+                        </p>
+                        <!-- Ví dụ 1 đề tài: 
+                        <ul class="mt-2 ml-5 list-disc text-sm">
+                            <li>
+                                2024 – Đề tài cấp trường: “Ứng dụng trí tuệ nhân tạo trong hỗ trợ dạy học lập trình Python cho sinh viên”.
+                                <br />
+                                <span class="text-gray-600">Vai trò: Chủ nhiệm đề tài.</span>
+                            </li>
+                        </ul>
+                        -->
+                    </li>
 
+                    <!-- 2. Sách và giáo trình -->
+                    <li>
+                        <h3 class="font-semibold">
+                            2. Sách và giáo trình xuất bản
+                        </h3>
+                        <p class="text-gray-600 text-sm italic">
+                            (Ghi đầy đủ tên sách/giáo trình, nhà xuất bản, năm xuất bản, vai trò: chủ biên, đồng tác giả…)
+                        </p>
+                    </li>
 
-<h3>2. Sách và giáo trình xuất bản.</h3>
+                    <!-- 3. Công trình NCKH đã công bố -->
+                    <li>
+                        <h3 class="font-semibold">
+                            3. Các công trình nghiên cứu khoa học đã công bố
+                        </h3>
+                        <p class="text-gray-600 text-sm italic">
+                            (Bài báo tạp chí, hội thảo trong nước/quốc tế; ghi theo chuẩn trích dẫn, có thể nhóm theo ISI/Scopus, Tạp chí trong nước,…)
+                        </p>
+                    </li>
 
-<h3>3. Các công trình nghiên cứu khoa học đã công bố.</h3>
+                    <!-- 4. Lĩnh vực nghiên cứu chính -->
+                    <li>
+                        <h3 class="font-semibold">
+                            4. Lĩnh vực nghiên cứu khoa học chính
+                        </h3>
+                        <p class="text-gray-600 text-sm italic">
+                            (Liệt kê 3–5 hướng nghiên cứu chính mà anh/chị quan tâm và có kinh nghiệm.)
+                        </p>
 
-<h4>4. Lĩnh vực nghiên cứu khoa học chính.</h4>
+                        <!-- Ví dụ: -->
+                        <!--
+                        <ul class="mt-2 ml-5 list-disc text-sm">
+                            <li>Trí tuệ nhân tạo và ứng dụng trong giáo dục (AI in Education).</li>
+                            <li>Hệ thống e-learning, học tập kết hợp (blended learning).</li>
+                            <li>Ứng dụng công nghệ thông tin trong giảng dạy và đánh giá kết quả học tập.</li>
+                        </ul>
+                        -->
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
