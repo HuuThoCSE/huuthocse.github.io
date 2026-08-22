@@ -333,7 +333,7 @@
                                 const month = String(today.getMonth() + 1).padStart(2, '0');
                                 const year = today.getFullYear();
 
-                                document.getElementById('current-date').textContent = `05/01/2026 - ${day}/${month}/${year}`;
+                                document.getElementById('current-date').textContent = `05/01/2026 - now(${day}/${month}/${year})`;
                                 </script>
                                 <td class="border border-gray-200 px-3 py-2 text-center">
                                     Trung tâm Công nghệ Phần mềm Đại học Cần Thơ <br>
@@ -342,6 +342,23 @@
                                 <td class="border border-gray-200 px-3 py-2 text-center">
                                     Giáo viên STEM - Robotics<br>
                                     (Bộ phận Đào tạo)
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50">
+                                <td id="current-date-v2" class="border border-gray-200 px-3 py-2 text-center">
+                                    21/08/2026 - nay
+                                </td>
+
+                                <script>
+                                document.getElementById('current-date-v2').textContent = `21/08/2026 - now(${day}/${month}/${year})`;
+                                </script>
+                                <td class="border border-gray-200 px-3 py-2 text-center">
+                                    BrightCHAMPS <br>
+                                    (BRIGHT ACADEMY)
+                                </td>
+                                <td class="border border-gray-200 px-3 py-2 text-center">
+                                    Giáo viên Code, Robotics - STEM<br>
                                 </td>
                             </tr>
                             <!-- Thêm các dòng khác tại đây -->
@@ -456,7 +473,7 @@
                             </li>
 
                             <li class="mt-1 list-decimal list-inside pl-0 text-sm">
-                                Nguyen Thi Phuong Vy, Nguyen Hoang Bao Ngoc, Tran Thi Lien, <b>Nguyen Huu Tho</b> (<b>07/2026</b>),
+                                Nguyen Thi Phuong Vy, Nguyen Hoang Bao Ngoc, Tran Thi Lien, <b>Nguyen Huu Tho</b> (<b>22/08/2026</b>),
                                 The Relationship of AI-Generated Game Experiences and Students’ Intentions to Engage in Environmental Behaviors
                                 VietAME Conference Organizing Committee. 
                             </li>
